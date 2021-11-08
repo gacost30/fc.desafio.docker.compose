@@ -2,7 +2,6 @@ FROM nginx:latest
 
 RUN rm /etc/nginx/conf.d/default.conf
 
-COPY html /usr/shared/nginx/html
 COPY nginx.conf /etc/nginx/conf.d
 
 RUN mkdir /var/www/html -p && touch /var/www/html/index.js
